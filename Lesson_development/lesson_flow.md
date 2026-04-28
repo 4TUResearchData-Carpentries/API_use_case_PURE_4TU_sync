@@ -1,10 +1,11 @@
 1. start with presentation
 2. Installation of the environment , see `installation_instructions.md`
 
-2.1. Clone to repo to have all the datasets 
+2.1. Clone to repo to have all the datasets (for the input)
 
 3. Try the `Lesson_development/wur_pure_reconcile_minimum.py` as the simplest visualization of the part 1 of the use case
 -  `nano minimal_wur_pure_script.py` 
+- This script will show the results in the screen , not yet make any csv , it just to visualize the process
 
 4. Try the `Lesson_development/wur_4tu_reconcile_minimum.py` as the simplest visualization of the part 2 of the use case
 -  `nano minimal_wur_4tu_script.py`

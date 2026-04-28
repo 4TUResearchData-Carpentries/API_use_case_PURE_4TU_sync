@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-
 """
+
 Goal of this script
 -------------------
 This script compares information coming from a Pure export CSV with metadata
@@ -35,6 +35,7 @@ This script supports reconciliation between two systems:
 
 By comparing both sides, we can identify records that may need manual review
 or automated update.
+
 """
 
 import argparse

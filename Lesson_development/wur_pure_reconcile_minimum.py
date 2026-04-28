@@ -1,7 +1,7 @@
 import csv
 import requests
 
-input_csv = "Lesson_development/wur_pure_minimum_dataset.csv"
+input_csv = "Lesson_development/input_data/wur_missing_in_pure_input_dataset.csv"
 base_url = "https://data.4tu.nl"
 
 with open(input_csv, "r", encoding="utf-8-sig", newline="") as f:
