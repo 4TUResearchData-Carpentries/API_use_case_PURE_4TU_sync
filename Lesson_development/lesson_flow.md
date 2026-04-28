@@ -15,7 +15,7 @@
 
 4. Show the end result with the wur_pure_4tu_reconcile.py command line tool and the real dataset
 
-4.1 mybe try to build a dashboard where they could upload the csv , in a graphical interface and run the script that produce a csv in the dashboard that they can save later
+5. Show the dashboard (`streamlit run Lesson_development\streamlit_app.py`) and host it online . Make them to make a github repo with this code and host their own dashboard. 
 
 
 7. Go back to presentation and talk about how they can serve their dashboard online
