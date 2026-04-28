@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 """
-
 Goal of this script
 -------------------
 This script compares information coming from a Pure export CSV with metadata

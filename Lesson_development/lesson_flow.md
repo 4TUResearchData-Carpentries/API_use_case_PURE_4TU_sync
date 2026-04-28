@@ -3,12 +3,15 @@
 
 2.1. Clone to repo to have all the datasets (for the input)
 
-3. Try the `Lesson_development/wur_pure_reconcile_minimum.py` as the simplest visualization of the part 1 of the use case
+3. Try to code from scratch the `Lesson_development/wur_pure_reconcile_minimum.py` as the simplest visualization of the part 1 of the use case
 -  `nano minimal_wur_pure_script.py` 
+- Show first the flow diagram in the presentation about this case 
 - This script will show the results in the screen , not yet make any csv , it just to visualize the process
 
 4. Try the `Lesson_development/wur_4tu_reconcile_minimum.py` as the simplest visualization of the part 2 of the use case
 -  `nano minimal_wur_4tu_script.py`
+- Show first the flow diagram in the presentation about this case 
+- This script will show the results in the screen , not yet make any csv , it just to visualize the process
 
 4. Show the end result with the wur_pure_4tu_reconcile.py command line tool and the real dataset
 
