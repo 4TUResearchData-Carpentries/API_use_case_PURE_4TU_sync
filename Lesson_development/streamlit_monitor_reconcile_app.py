@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import tempfile
 from typing import Any, Dict, List
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -601,7 +602,35 @@ def run_reconciliation_workflow() -> None:
         except Exception as exc:
             st.error(f"Error while running reconciliation: {exc}")
 
+# ------------------------------------------------------------
+# Documentation pages
+# ------------------------------------------------------------
 
+def run_markdown_documentation(title: str, markdown_path: str) -> None:
+    st.title(title)
+
+    path = Path(markdown_path)
+
+    if not path.exists():
+        st.error(f"Documentation file not found: {path}")
+        return
+
+    markdown_text = path.read_text(encoding="utf-8")
+    st.markdown(markdown_text)
+
+
+def run_monitoring_documentation() -> None:
+    run_markdown_documentation(
+        title="Documentation: 4TU monitoring dashboard",
+        markdown_path="Lesson_development/Documentation/4tu_monitoring_dashboard_documentation.md",
+    )
+
+
+def run_reconciliation_documentation() -> None:
+    run_markdown_documentation(
+        title="Documentation: Pure <-> 4TU reconciliation workflow",
+        markdown_path="Lesson_development/Documentation/4tu_pure_bidirectional_reconciliation_cli_do.md",
+    )
 # ------------------------------------------------------------
 # Main integrated app
 # ------------------------------------------------------------
@@ -613,6 +642,8 @@ workflow = st.radio(
     [
         "Monitor datasets/software in 4TU",
         "Reconcile Pure and 4TU publication metadata",
+        "Read monitoring documentation",
+        "Read reconciliation documentation",
     ],
     horizontal=True,
 )
@@ -624,3 +655,9 @@ if workflow == "Monitor datasets/software in 4TU":
 
 elif workflow == "Reconcile Pure and 4TU publication metadata":
     run_reconciliation_workflow()
+
+elif workflow == "Read monitoring documentation":
+    run_monitoring_documentation()
+
+elif workflow == "Read reconciliation documentation":
+    run_reconciliation_documentation()
