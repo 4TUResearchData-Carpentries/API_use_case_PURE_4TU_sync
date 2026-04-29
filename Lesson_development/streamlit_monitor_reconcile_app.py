@@ -7,7 +7,7 @@ from typing import Any, Dict, List
 import pandas as pd
 import requests
 import streamlit as st
-from dotenv import load_dotenv
+
 import time
 
 from wur_pure_4tu_reconcile import (
@@ -18,8 +18,6 @@ from wur_pure_4tu_reconcile import (
 # ------------------------------------------------------------
 # Shared configuration
 # ------------------------------------------------------------
-
-load_dotenv()
 
 DEFAULT_BASE_URL = os.getenv("FOURTU_BASE_URL", "https://data.4tu.nl").rstrip("/")
 DEFAULT_TIMEOUT = int(os.getenv("FOURTU_TIMEOUT", "30"))
